@@ -17,6 +17,10 @@ public class Player {
         return cash;
     }
 
+    public void addCash(int cash){
+        this.cash += cash;
+    }
+
     public void setBet(int amount) throws NoMoneyEnough {
         if (cash - amount < 0) {
             throw new NoMoneyEnough();
